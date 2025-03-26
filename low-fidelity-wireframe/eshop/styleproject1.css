@@ -1,21 +1,54 @@
 html {
   scroll-behavior: smooth;
 }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+img,
+i,
+span,
+div,
+section,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Gruppo", sans-serif;
   background-color: #dff8eb;
-  margin: 0;
-  padding: 20px 60px 20px 60px;
+  color: #18020c;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-weight: bold;
 }
 
-h1 {
-  color: #826aed;
-  padding-left: 45px;
-  margin-top: 80px;
-  margin-bottom: 15px;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
+/* Hlavička */
 .fixed-header {
   position: fixed;
   top: 0;
@@ -64,6 +97,19 @@ nav ul li {
   border-bottom-color: #826aed;
 }
 
+body {
+  font-family: "Gruppo", sans-serif;
+  background-color: #dff8eb;
+  margin: 0;
+  padding: 20px 60px 20px 60px;
+}
+
+h1 {
+  color: #826aed;
+  padding-left: 45px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
 
 .back-link {
   display: inline-block;
