@@ -7,7 +7,7 @@ body {
   background-color: #dff8eb;
   margin: 0;
   padding: 20px 60px 20px 60px;
-  font-size: 5em;
+  font-size: 2em;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
   padding-left: 45px;
   margin-top: 80px;
   margin-bottom: 15px;
-  font-size: 10em;
+  font-size: 3em;
 }
 
 .back-link {
