@@ -7,15 +7,20 @@ body {
   background-color: #dff8eb;
   margin: 0;
   padding: 20px 60px 20px 60px;
-  font-size: 1.1em;
+   height: auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
 
 h1 {
   color: #826aed;
   padding-left: 45px;
   margin-top: 80px;
   margin-bottom: 15px;
-  font-size: 2.5em;
+ 
 }
 
 .back-link {
