@@ -1,0 +1,67 @@
+/* Hlavička */
+.fixed-header .container {
+  /* redukováno */
+  padding: 0;
+  width: 100%;
+}
+
+.fixed-header {
+  /* přidáno, ať sedí odsazení */
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* tady je lepší vw */
+  width: 100vw;
+  background-color: #ffffff;
+  padding: 20px 60px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: normal;
+  color: #18020c;
+}
+
+.logo-design {
+  color: #826aed;
+}
+
+.fixed-header a {
+  text-decoration: none;
+}
+
+.fixed-header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.fixed-header nav ul li {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 1.1em;
+  color: #18020c;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #826aed;
+  border-bottom-color: #826aed;
+}
+
+.project-detail-container h1 {
+  /* tohle není nejlepší řešení, nejlépe by bylo posouvat přímo .project-detail-container, ale nechci vám razantně měnit celý kód */
+  margin-top: 120px;
+}
