@@ -97,6 +97,12 @@ nav ul li {
   border-bottom-color: #826aed;
 }
 
+body {
+  font-family: "Gruppo", sans-serif;
+  background-color: #dff8eb;
+  margin: 0;
+  padding: 20px 60px 20px 60px;
+}
 
 h1 {
   color: #826aed;
