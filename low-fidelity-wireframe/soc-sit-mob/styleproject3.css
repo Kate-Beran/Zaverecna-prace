@@ -47,10 +47,9 @@ h1 {
 }
 
 .project-images img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Obrázek se přizpůsobí šířce své buňky v gridu */
+  height: auto; /* Výška se dopočítá automaticky podle poměru stran */
   object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* zaoblené rohy obrázků */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* jemný stín */
 }
-
