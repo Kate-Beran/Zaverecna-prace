@@ -120,6 +120,10 @@ nav ul li {
   overflow: hidden;
 
   align-self: start;
+
+  /* vystředil bych na prostředek kontejneru, ať fotka není tak oříznutá */
+  padding: 20px;
+  background: #fdfdfd;
 }
 
 .hero-image {
@@ -146,11 +150,24 @@ nav ul li {
 .hero-text p {
   font-size: 1.1em;
   line-height: 1.7;
+  /* dlouhý text se špatně čte */
+  max-width: 80ex;
+
+  /* lepší velikosti */
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+.hero-text p span {
+  color: #826aed;
 }
 
 /* Volná plocha */
 .volna-plocha {
-  height: 143px;
+  /* height: 143px; */
+  /* zmenšíme volnou plochu, aby to lákalo dál */
+  height: 60px;
   max-width: 1440px;
   margin: 0 auto;
   background-color: #dff8eb;
@@ -176,6 +193,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   gap: 120px;
+  align-items: center;
 }
 
 .portfolio-item {
@@ -186,6 +204,9 @@ nav ul li {
   transform: translateX(-100px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   gap: 85px;
+
+  /* omezil bych v šířce */
+  max-width: 900px;
 }
 
 .portfolio-item.animated {
@@ -243,6 +264,8 @@ nav ul li {
   color: #826aed;
   margin-bottom: 15px;
   word-break: break-word;
+  /* lepší line-height */
+  line-height: 1.15;
 }
 
 .portfolio-item-description {
@@ -250,6 +273,9 @@ nav ul li {
   line-height: 1.8;
   color: #18020c;
   word-break: break-word;
+  max-width: 60ex;
+  /* lepší line-height */
+  line-height: 1.35;
 }
 
 .portfolio-item-link {
@@ -261,6 +287,7 @@ nav ul li {
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
   word-break: break-word;
+  max-width: max-content;
 }
 
 .portfolio-item-link:hover {
@@ -276,6 +303,8 @@ nav ul li {
   text-align: center;
   display: flex;
   align-items: center;
+  /* trochu vzdušnost */
+  height: 90px;
 }
 
 .cta-banner-container {
@@ -286,6 +315,8 @@ nav ul li {
 .cta-banner-title {
   font-size: 2.5em;
   color: #18020c;
+  /* menší velikost */
+  font-size: 2em;
 }
 
 .cta-banner-accent {
@@ -313,6 +344,17 @@ nav ul li {
   text-align: left;
   width: 100%;
   position: relative;
+
+  /* zmenšit text, ať se lépe čte */
+  font-size: 1.8em;
+  /* maximální šířka pro lepší čitelnost */
+  max-width: 80ex;
+  /* řádkování */
+  line-height: 1.4;
+}
+
+.contact-section-footer-text span {
+  color: #826aed;
 }
 
 .contact-cards-grid {
@@ -339,6 +381,10 @@ nav ul li {
   justify-content: center;
   align-items: center;
   padding: 20px;
+
+  /* aby to drželo čtvercový tvar */
+  max-width: 240px;
+  width: 100%;
 }
 
 .contact-card:hover {
@@ -389,7 +435,8 @@ footer {
 
 .back-to-top-link {
   position: absolute;
-  bottom: 0;
+  /* offset nad patičkou */
+  top: -90px;
   right: 0;
   display: inline-flex;
   justify-content: center;
@@ -539,6 +586,15 @@ footer {
     text-align: left;
     height: auto;
     align-items: center;
+  }
+
+  .portfolio-item-title {
+    max-width: 40ex;
+    text-align: center;
+  }
+
+  .portfolio-item-description {
+    text-align: center;
   }
 
   #cta-banner {
