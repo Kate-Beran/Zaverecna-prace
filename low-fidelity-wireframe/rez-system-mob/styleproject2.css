@@ -13,8 +13,8 @@ body {
 h1 {
   color: #826aed;
   padding-left: 45px; /* Odsazení zleva */
-  margin-top: 80px; /* Odsazení shora - můžeš upravit podle potřeby */
-  margin-bottom: 15px; /* Přidáme nějaký prostor pod nadpisem */
+  margin-top: 80px; /* Odsazení shora */
+  margin-bottom: 15px; /*prostor pod nadpisem */
 }
 
 .back-link {
@@ -44,21 +44,21 @@ h1 {
   grid-template-columns: repeat(
     auto-fit,
     minmax(400px, 1fr)
-  ); /* Nastavíme sloupce */
-  gap: 20px; /* Mezera mezi obrázky (vodorovná i svislá) - uprav podle potřeby */
+  ); /* Nastavení sloupce */
+  gap: 20px; /* Mezera mezi obrázky (vodorovná i svislá) */
   align-items: stretch;
 }
 
 .project-images img {
   width: 100%; /* Obrázek se přizpůsobí šířce své buňky v gridu */
   height: auto; /* Výška se dopočítá automaticky podle poměru stran */
-  object-fit: cover; /* Doporučuji pro vyplnění prostoru a oříznutí, pokud je potřeba */
-  border-radius: 5px; /* Volitelné: zaoblené rohy obrázků */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Volitelné: jemný stín */
+  object-fit: cover; /* Vyplnění prostoru a oříznutí */
+  border-radius: 5px; /* zaoblené rohy obrázků */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* jemný stín */
 }
 .problemovy-obrazek {
   object-fit: contain !important; /* Zajistí, že se celý obrázek vejde */
-  width: 100% !important; /* Necháme šířku na 100% buňky */
+  width: 100% !important; /* šířka na 100% buňky */
   height: auto !important; /* Zachová poměr stran */
-  background-color: #f5f5f5; /* Nastavíme světle šedé pozadí - můžeš upravit */
+  background-color: #f5f5f5;
 }
